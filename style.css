@@ -51,8 +51,12 @@ body {
 }
 iframe{
     padding: 5rem;
+    margin-top: -3rem;
+    margin-right: -4.7rem;
+    padding-bottom: rem;
     align-items: center;
-    margin-top: 13rem;
+    float:right; 
+    
     
     
 }
