@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> کتب درسی </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap');
+
+        body {
+            background-color: red;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            direction: rtl;
+            position: relative;
+        }
+        h1 {
+            color: blue;
+            font-size: 50px;
+            font-weight: bold;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        .small-text {
+            font-size: 20px;
+            font-weight: normal;
+            color: yellow ;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            color: white;
+            font-size: 20px;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="text">شما هک شدید</h1>
+    <div class="footer">By Black hackers</div>
+    <h1 class="small-text">لطفا صبر کنید</h1>
+
+    <script>
+        let count = 1;
+        function updateText() {
+            const baseText = "شما هک شدید";
+            document.getElementById("text").innerText = baseText + ".".repeat(count);
+            count = count < 3 ? count + 1 : 1;
+        }
+        setInterval(updateText, 1000);
+    </script>
+</body>
+
+</html>
